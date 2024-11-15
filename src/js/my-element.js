@@ -1,6 +1,4 @@
 import { LitElement, css, html } from 'lit'
-import litLogo from './assets/lit.svg'
-import viteLogo from '/vite.svg'
 
 /**
  * An example element.
@@ -108,9 +106,11 @@ export class MyElement extends LitElement {
         cursor: pointer;
         transition: border-color 0.25s;
       }
+
       button:hover {
         border-color: #646cff;
       }
+        
       button:focus,
       button:focus-visible {
         outline: 4px auto -webkit-focus-ring-color;

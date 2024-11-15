@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.visible{
+   opacity: 1;
+}
+
+.fade{
+   opacity: 0;
+}
+
+.rotate {
+   transform: rotate(-180deg);
+}

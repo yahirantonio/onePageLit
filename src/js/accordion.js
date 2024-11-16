@@ -29,6 +29,7 @@ export class Accordion extends LitElement {
 
    _showAccordion(){
       return this.rotate ? 'show_accordion' : '';
+
    }
 
    render() {

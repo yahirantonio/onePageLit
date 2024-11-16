@@ -19,3 +19,15 @@
    height: 120px;
    opacity: 1;
 }
+
+@media (max-width:  800px) {
+   .show_accordion{
+      height: 140px;
+   }
+}
+
+@media (max-width:  450px) {
+   .show_accordion{
+      height: 260px;
+   }
+}

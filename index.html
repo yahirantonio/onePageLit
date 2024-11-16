@@ -17,9 +17,9 @@
     style="background-image: url('./src/img/invoice_book.jpg')">
     <nav class="text-white">
       <ul class="flex flex-row gap-9 justify-center md:justify-start font-roboto">
-        <li><a href="#" class="hover:underline">Beneficios</a></li>
-        <li><a href="#" class="hover:underline">Informacion</a></li>
-        <li><a href="#" class="hover:underline">Contacto</a></li>
+        <li><a href="#benefits" class="hover:underline">Beneficios</a></li>
+        <li><a href="#details" class="hover:underline">Informacion</a></li>
+        <li><a href="#contactUs" class="hover:underline">Contacto</a></li>
       </ul>
     </nav>
 
@@ -57,7 +57,7 @@
 
     </section>
 
-    <section class="lg:mx-20 md:mx-10 mx-5 my-20 lg:mt-10" id="info">
+    <section class="lg:mx-20 md:mx-10 mx-5 my-20 lg:mt-10" id="details">
       <div class="flex flex-wrap gap-9 lg:gap-16 justify-center items-center">
         <div class="max-w-md text-center lg:text-left">
           <h2 class="text-4xl font-serif mb-9">Emite tu factura online y xml para tu empresa en nuestra plataforma</h2>
@@ -70,7 +70,7 @@
       </div>
     </section>
 
-    <section class="lg:mx-20 md:mx-10 mx-5 mb-16" id="questions">
+    <section class="lg:mx-20 md:mx-10 mx-5 py-20 lg:mb-20" id="questions">
       <h2 class="text-4xl font-serif mb-9 text-center">Preguntas Frecuentes</h2>
       <div class="flex flex-col items-center">
 
@@ -86,8 +86,54 @@
       </div>
     </section>
 
-    <div>
-      <section></section>
+    <div class="grid grid-cols-1 lg:grid-cols-7">
+      <section class="col-span-4 m-auto w-10/12 md:w-3/6 my-16" id="contactUs">
+        <h2 class="text-4xl font-serif mb-9 text-center"> Contacto </h2>
+        <form action="" onsubmit="return false;">
+          <div class="flex flex-col mb-4 gap-3">
+            <label for="lname" class="font-roboto">Nombre:</label>
+            <input type="text" id="lname" name="lname" placeholder="Juan Alvarado"
+              class="font-roboto border-2 rounded-2xl p-2 pl-4">
+          </div>
+          <div class="flex flex-col mb-4 gap-3">
+            <label for="lemail" class="font-roboto">Correo:</label>
+            <input type="text" id="lname" name="lemail" placeholder="example@gmail.com"
+              class="font-roboto border-2 rounded-2xl p-2 pl-4">
+          </div>
+          <div class="flex flex-col mb-4 gap-3">
+            <label for="lmensaje" class="font-roboto">Mensaje:</label>
+            <textarea name="" id="" class="font-roboto border-2  rounded-2xl p-2 pl-4"
+              placeholder="Escribe aqui..."></textarea>
+          </div>
+
+          <button type="submit"
+            class="font-sans text-2xl text-white bg-slate-800 hover:bg-slate-700 w-full p-3 mt-6 rounded-2xl">
+            Enviar</button>
+        </form>
+      </section>
+      <section class="bg-purple-900 text-white col-span-3 pl-16 pb-16 rounded-t-3xl lg:rounded-lt-3xl" id="info">
+        <h2 class="text-4xl font-serif mb-9 mt-16"> Info </h2>
+        <div class="flex flex-col md:flex-row lg:flex-col flex-wrap gap-9 justify-evenly ml-7">
+          <div class="inline-flex items-center gap-3 min-w-36">
+            <iconify-icon icon="ic:baseline-email" width="48" height="48" class="text-white"></iconify-icon>
+            <p class="font-roboto">example@gmail.com</p>
+          </div>
+          <div class="inline-flex items-center gap-3">
+            <iconify-icon icon="material-symbols:call" width="48" height="48"
+              class="text-white float-left mr-2"></iconify-icon>
+            <p class="mt-2 font-roboto">+52 358 289 8480</p>
+          </div>
+          <div class="flex w-48  items-center gap-3">
+            <iconify-icon icon="tabler:clock-hour-4" width="48" height="48"
+              class="text-white float-left mr-2"></iconify-icon>
+            <p class="mt-2 font-roboto">9AM - 6PM</p>
+          </div>
+          <div class="flex w-48 items-center gap-3 ">
+            <iconify-icon icon="mdi:location" width="48" height="48" class="text-white float-left mr-2"></iconify-icon>
+            <p class="mt-2 font-roboto">México</p>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 

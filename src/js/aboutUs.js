@@ -71,7 +71,7 @@ export class InfoContainer extends LitElement {
       return html`<section
       class="m-auto my-16 lg:px-20 md:px-10 px-5 pt-6 flex flex-wrap-reverse lg:flex-nowrap gap-9 md:gap-24 items-center justify-center w-full md:w-5/6 
       transition-all duration-1000 opacity-1 ${this._fade()}" id="AboutUs">
-      <img src="/public/img/team.png" class="max-w-xs md:max-w-sm bg-gray-300 p-5 rounded-2xl" alt="">
+      <img src="/img/team.png" class="max-w-xs md:max-w-sm bg-gray-300 p-5 rounded-2xl" alt="">
       <div class="flex flex-wrap justify-center md:justify-between items-center gap-9">
         <h2 class="font-serif text-4xl md:text-5xl">Acerca de nosotros</h2>
         <iconify-icon icon="maki:arrow" width="42px" height="42px" class="cursor-pointer transition-all duration-1000 ${this._rotate()}" @click="${this._show}"></iconify-icon>
@@ -93,7 +93,7 @@ export class InfoContainer extends LitElement {
       class="m-auto my-16 lg:px-20 md:px-10 px-5 pt-6 flex flex-wrap-reverse lg:flex-nowrap gap-9 md:gap-16 items-center justify-center lg:justify-between w-full md:w-5/6 
       opacity-0 transition-all duration-1000 ${this._appear()}"
       id="Mission">
-      <img src="/public/img/target.png" class="w-64 h-64 m-auto" alt="">
+      <img src="/img/target.png" class="w-64 h-64 m-auto" alt="">
       <div class="flex flex-wrap justify-center md:justify-between items-center gap-9 lg:w-2/4 flex-col md:flex-row">
         <h2 class="font-serif text-4xl md:text-5xl">Misión</h2>
         <iconify-icon icon="maki:arrow" width="42px" height="42px" class="cursor-pointer transition-all duration-1000  ${this._rotate()}"  @click="${this._show}"></iconify-icon>

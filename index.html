@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
- 
+
   <title>Invoices</title>
   <link rel="stylesheet" href="./src/css/index.css" />
 </head>
@@ -16,27 +16,58 @@
   <header class="lg:px-20 md:px-10 px-5 pt-6 bg-cover bg-center bg-no-repeat w-full h-screen"
     style="background-image: url('./src/img/invoice_book.jpg')">
     <nav class="text-white">
-      <ul class="flex flex-row gap-9 justify-center md:justify-start">
+      <ul class="flex flex-row gap-9 justify-center md:justify-start font-roboto">
         <li><a href="#" class="hover:underline">Beneficios</a></li>
         <li><a href="#" class="hover:underline">Informacion</a></li>
         <li><a href="#" class="hover:underline">Contacto</a></li>
       </ul>
     </nav>
 
-      <div class="text-center md:text-left mt-20 text-white">
-        <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold md:w-5/6 lg:w-7/12 mb-16">Facilitamos la
-          Gestión de tu Facturación</h1>
-        <h2 class="text-2xl md:text-3xl md:w-4/6 lg:w-4/12 mb-16">Emisión de CFDI autorizados por el SAT, de manera
-          rápida y segura a través del mejor portal de timbrado de facturas en México.</h2>
-        <button class="text-xl md:w-3/6 lg:w-3/12 bg-rose-700 hover:bg-rose-600 p-6 rounded-2xl">INICIAR PRUEBA GRATIS</button>
-      </div>
+    <div class="text-center md:text-left mt-20 text-white">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold md:w-5/6 lg:w-7/12 mb-16">Facilitamos la
+        Gestión de tu Facturación</h1>
+      <h2 class="text-2xl md:text-3xl md:w-4/6 lg:w-4/12 mb-16 font-roboto">Emisión de CFDI autorizados por el SAT, de manera
+        rápida y segura a través del mejor portal de timbrado de facturas en México.</h2>
+      <button class="text-xl md:w-3/6 lg:w-3/12 bg-rose-700 hover:bg-rose-600 p-6 rounded-2xl font-roboto">INICIAR PRUEBA
+        GRATIS</button>
+    </div>
   </header>
 
   <main>
     <div class="min-h-96">
       <info-container></info-container>
     </div>
+
+    <div class="bg-gradient-to-t from-emerald-500 to-white h-10"></div>
+    <section class="lg:px-20 md:px-10 px-5 pb-20 bg-gradient-to-t from-green-900 to-emerald-500 text-white" id="benefits">
+      <h2 class="text-4xl md:text-5xl text-center pt-10 pb-20 font-serif">Beneficios</h2>
+      <div class="flex justify-center md:justify-around lg:justify-between flex-wrap gap-16">
+        <benefit-card imageUrl="./src/img/folder.png" title="Facturación"
+          text="Emisión de CFDI autorizados por el SAT, de manera rápida y segura a través del mejor portal de timbrado de facturas en México."></benefit-card>
+        <benefit-card imageUrl="./src/img/fast.webp" title="Facturación"
+          text="Emisión de CFDI autorizados por el SAT, de manera rápida y segura a través del mejor portal de timbrado de facturas en México."></benefit-card>
+        <benefit-card imageUrl="./src/img/document.png" title="Facturación"
+          text="Emisión de CFDI autorizados por el SAT, de manera rápida y segura a través del mejor portal de timbrado de facturas en México."></benefit-card>
+        <benefit-card imageUrl="./src/img/financial.jpg" title="Facturación"
+          text="Emisión de CFDI autorizados por el SAT, de manera rápida y segura a través del mejor portal de timbrado de facturas en México."></benefit-card>
+      </div>
+
+    </section>
+
+    <section class="lg:mx-20 md:mx-10 mx-5 my-20 lg:mt-10" id="info">
+      <div class="flex flex-wrap gap-9 lg:gap-16 justify-center items-center">
+        <div class="max-w-md text-center lg:text-left">
+          <h2 class="text-4xl font-serif mb-9">Emite tu factura online y xml para tu empresa en nuestra plataforma</h2>
+          <p class="font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at lectus arcu. Morbi ac viverra lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis ut feugiat mi, quis pharetra mi. Fusce turpis odio, tristique quis turpis at, porttitor pulvinar purus.</p>
+        </div>
+        <img src="./src/img/analytics.png" class="max-w-lg" alt="Imagen de graficas">
+      </div>
+    </section>
+
+    
   </main>
+
+
   <script src="./src/js/main.js" type="module"></script>
 </body>
 

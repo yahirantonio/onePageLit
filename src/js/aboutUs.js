@@ -75,7 +75,7 @@ export class InfoContainer extends LitElement {
       <div class="flex flex-wrap justify-center md:justify-between items-center gap-9">
         <h2 class="font-serif text-4xl md:text-5xl">Acerca de nosotros</h2>
         <iconify-icon icon="maki:arrow" width="42px" height="42px" class="cursor-pointer transition-all duration-1000 ${this._rotate()}" @click="${this._show}"></iconify-icon>
-        <p class="text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a hendrerit
+        <p class="text-center md:text-left font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a hendrerit
     mauris, sit amet condimentum
     tortor. Aenean vel nisl et nunc consequat maximus.
     </br> </br>
@@ -97,7 +97,7 @@ export class InfoContainer extends LitElement {
       <div class="flex flex-wrap justify-center md:justify-between items-center gap-9 lg:w-2/4 flex-col md:flex-row">
         <h2 class="font-serif text-4xl md:text-5xl">Misión</h2>
         <iconify-icon icon="maki:arrow" width="42px" height="42px" class="cursor-pointer transition-all duration-1000  ${this._rotate()}"  @click="${this._show}"></iconify-icon>
-        <p class="text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a hendrerit
+        <p class="text-center md:text-left font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a hendrerit
     mauris, sit amet condimentum
     tortor. Aenean vel nisl et nunc consequat maximus.
     Sed a elementum velit. Cras nulla elit, tincidunt sed ornare eget, aliquet vitae turpis. Vestibulum sed

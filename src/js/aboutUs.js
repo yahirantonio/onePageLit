@@ -11,7 +11,7 @@ export class InfoContainer extends LitElement {
          isVisible: { type: Boolean },
          sections: { type: Boolean },
          missionVisible: { type: Boolean },
-         rotate: {type: Boolean}
+         rotate: { type: Boolean }
       }
    }
 
@@ -31,11 +31,11 @@ export class InfoContainer extends LitElement {
 
       this.rotate = !this.rotate;
 
-      if(this.missionVisible){
+      if (this.missionVisible) {
          this.isVisible = !this.isVisible;
       } else {
          setTimeout(() => {
-            this.isVisible= !this.isVisible;
+            this.isVisible = !this.isVisible;
          }, 1200)
       }
 
@@ -45,14 +45,14 @@ export class InfoContainer extends LitElement {
 
       if (this.isVisible == true) {
          this.missionVisible = !this.missionVisible;
-      } else if(this.isVisible == false && this.missionVisible == false) {
+      } else if (this.isVisible == false && this.missionVisible == false) {
          this.missionVisible = !this.missionVisible
       } else {
          setTimeout(() => {
             this.missionVisible = !this.missionVisible;
          }, 1200)
       }
-      
+
    }
 
    _fade() {
@@ -75,14 +75,9 @@ export class InfoContainer extends LitElement {
       <div class="flex flex-wrap justify-center md:justify-between items-center gap-9">
         <h2 class="font-serif text-4xl md:text-5xl">Acerca de nosotros</h2>
         <iconify-icon icon="maki:arrow" width="42px" height="42px" class="cursor-pointer transition-all duration-1000 ${this._rotate()}" @click="${this._show}"></iconify-icon>
-        <p class="text-center md:text-left font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a hendrerit
-    mauris, sit amet condimentum
-    tortor. Aenean vel nisl et nunc consequat maximus.
-    </br> </br>
-    Sed a elementum velit. Cras nulla elit, tincidunt sed ornare eget, aliquet vitae turpis. Vestibulum sed
-    lobortis
-    lorem, non interdum erat. Integer egestas fermentum mi a tincidunt. Phasellus purus magna, interdum nec
-    porttitor non, auctor sed diam. Mauris ut porttitor dolor, id rutrum nunc.
+        <p class="text-center md:text-left font-roboto">En Facturas Facilitas, simplificamos la forma en que gestionas tus facturas. Somos una plataforma en línea dedicada a brindar soluciones rápidas, seguras y accesibles para la creación, envío y administración de facturas electrónicas.
+        <br><br>Con un equipo apasionado por la innovación, nos esforzamos por ofrecer un servicio intuitivo y confiable, adaptado a las necesidades de nuestros clientes.
+         ¡Facilitar tus finanzas es nuestra prioridad!
         </p>
       </div>
     </section> `
@@ -97,13 +92,7 @@ export class InfoContainer extends LitElement {
       <div class="flex flex-wrap justify-center md:justify-between items-center gap-9 lg:w-2/4 flex-col md:flex-row">
         <h2 class="font-serif text-4xl md:text-5xl">Misión</h2>
         <iconify-icon icon="maki:arrow" width="42px" height="42px" class="cursor-pointer transition-all duration-1000  ${this._rotate()}"  @click="${this._show}"></iconify-icon>
-        <p class="text-center md:text-left font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a hendrerit
-    mauris, sit amet condimentum
-    tortor. Aenean vel nisl et nunc consequat maximus.
-    Sed a elementum velit. Cras nulla elit, tincidunt sed ornare eget, aliquet vitae turpis. Vestibulum sed
-    lobortis
-    lorem, non interdum erat. Integer egestas fermentum mi a tincidunt. Phasellus purus magna, interdum nec
-    porttitor non, auctor sed diam. Mauris ut porttitor dolor, id rutrum nunc.
+        <p class="text-center md:text-left font-roboto">Nuestra misión es empoderar a emprendedores y empresas de todos los tamaños con herramientas tecnológicas que optimizan sus procesos administrativos, ahorrando tiempo y garantizando cumplimiento legal.
         </p>
       </div>
     </section> `

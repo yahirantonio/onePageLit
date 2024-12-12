@@ -20,18 +20,18 @@
 
 .show_accordion {
    padding: 0 20px 20px 20px;
-   height: 120px;
+   height: 70px;
    opacity: 1;
 }
 
 @media (max-width:  800px) {
    .show_accordion{
-      height: 140px;
+      height: 90px;
    }
 }
 
 @media (max-width:  450px) {
    .show_accordion{
-      height: 260px;
+      height: 140px;
    }
 }

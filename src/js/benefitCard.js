@@ -21,7 +21,7 @@ export class BenefitCard extends LitElement {
          <div class="flex flex-col card max-w-64 text-center gap-9">
             <div class="bg-cover bg-center w-32 h-32 rounded-full bg-white m-auto" style="background-image: url(${this.imageUrl})"></div>
             <h3 class="text-2xl font-serif">${this.title}</h3>
-            <p class="font-roboto">${this.text}</p>
+            <p class="font-roboto text-lg">${this.text}</p>
          </div>
       `
    }

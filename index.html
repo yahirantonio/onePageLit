@@ -14,39 +14,41 @@
 </head>
 
 <body>
-
-  <header class=" bg-cover bg-center bg-no-repeat w-full h-screen"
+  <header class="bg-cover bg-center bg-no-repeat w-full h-screen"
     style="background-image: url('/public/img/invoice_book.jpg')">
-    <div class="header_container absolute left-0 top-0 z-10 lg:px-20 md:px-10 px-5 pt-6 h-screen">
-      <nav class="text-white">
-        <ul class="flex flex-row gap-9 justify-center md:justify-start font-roboto">
-          <li><a href="#benefits" class="hover:underline">Beneficios</a></li>
-          <li><a href="#details" class="hover:underline">Informacion</a></li>
-          <li><a href="#contactUs" class="hover:underline">Contacto</a></li>
-        </ul>
-      </nav>
 
-      <div class="text-center md:text-left mt-20 text-white">
-        <h1 class="text-5xl md:text-7xl font-serif font-bold md:w-5/6 lg:w-7/12 mb-16">Facilitamos la
-          Gestión de tu Facturación</h1>
-        <h2 class="text-2xl md:text-3xl md:w-4/6 lg:w-4/12 mb-16 font-roboto">Emisión de CFDI autorizados por el SAT, de
+    <nav class="text-white fixed top-0 py-3 w-full lg:px-40 md:px-20 px-10 transition duration-200" id="navbar">
+      <ul class="flex flex-row flex-wrap justify-center sm:justify-between font-roboto items-center">
+        <div class="flex gap-9">
+          <li><a href="#benefits" class="hover:underline font-bold text-xl">Beneficios</a></li>
+          <li><a href="#details" class="hover:underline font-bold text-xl">Informacion</a></li>
+          <li><a href="#contactUs" class="hover:underline font-bold text-xl">Contacto</a></li>
+        </div>
+        <button
+          class="px-6 py-2 bg-red-600 text-white rounded-lg shadow-md hover:bg-red-700 active:scale-95 transition duration-200 hidden sm:block">
+          PROBAR
+          AHORA</button>
+      </ul>
+    </nav>
+
+    <div class="bg-[#0000002E] lg:px-40 md:px-20 px-10 h-screen w-full">
+      <div class="text-center lg:text-left text-white">
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-serif font-bold mb-6 pt-48">Facilitamos la
+          Gestión <br> de tu Facturación</h1>
+        <h2 class="text-2xl w-full lg:w-5/12 font-roboto">Emisión de CFDI autorizados por el SAT, de
           manera
           rápida y segura a través del mejor portal de timbrado de facturas en México.</h2>
-        <button class="text-xl md:w-3/6 lg:w-3/12 bg-rose-700 hover:bg-rose-600 p-6 rounded-2xl font-roboto">INICIAR
-          PRUEBA
-          GRATIS</button>
       </div>
-
     </div>
   </header>
 
-  <main>
+  <main id="trigger">
     <div class="min-h-96">
       <info-container></info-container>
     </div>
 
-    <div class="bg-gradient-to-t from-emerald-500 to-white h-10"></div>
-    <section class="lg:px-20 md:px-10 px-5 pb-20 bg-gradient-to-t from-green-900 to-emerald-500 text-white"
+    <div class="bg-gradient-to-t from-emerald-500 to-white h-10 mt-36"></div>
+    <section class="lg:px-40 md:px-20 px-10 pb-20 bg-gradient-to-t from-green-900 to-emerald-500 text-white"
       id="benefits">
       <h2 class="text-4xl md:text-5xl text-center pt-10 pb-20 font-serif">Beneficios</h2>
       <div class="flex justify-center md:justify-around lg:justify-between flex-wrap gap-16">
@@ -62,22 +64,20 @@
 
     </section>
 
-    <section class="lg:mx-20 md:mx-10 mx-5 my-20 lg:mt-10" id="details">
-      <div class="flex flex-wrap gap-9 lg:gap-16 justify-center items-center">
-        <div class="max-w-md text-center lg:text-left">
-          <h2 class="text-4xl font-serif mb-9">Emite tu factura online y xml para tu empresa en nuestra plataforma</h2>
-          <p class="font-roboto">
-            Con nuestra plataforma, puedes emitir facturas y archivos XML en línea de forma rápida, segura y cumpliendo
-            con todas las normativas legales. Diseñada para pequeñas y grandes empresas, te ayuda a optimizar tus
-            procesos administrativos y ahorrar tiempo, brindándote el control total de tus operaciones desde cualquier
-            lugar.
-          </p>
-        </div>
-        <img src="/public/img/analytics.png" class="max-w-lg" alt="Imagen de graficas">
+    <section class="my-36 lg:px-40 md:px-20 px-10 pt-6 flex flex-wrap-reverse gap-16 justify-center" id="details">
+      <img src="/public/img/analytics.png" class="max-w-xs md:max-w-sm" alt="Imagen ilustrativa de una grafica">
+      <div class=" md:max-w-lg text-center lg:text-left">
+        <h2 class="text-4xl font-serif mb-9">Emite tu factura online y xml para tu empresa en nuestra plataforma</h2>
+        <p class="font-roboto text-lg">
+          Con nuestra plataforma, puedes emitir facturas y archivos XML en línea de forma rápida, segura y cumpliendo
+          con todas las normativas legales. Diseñada para pequeñas y grandes empresas, te ayuda a optimizar tus
+          procesos administrativos y ahorrar tiempo, brindándote el control total de tus operaciones desde cualquier
+          lugar.
+        </p>
       </div>
     </section>
 
-    <section class="lg:mx-20 md:mx-10 mx-5 py-20 lg:mb-20" id="questions">
+    <section class="lg:px-40 md:px-20 my-36 md:w-4/6 mx-auto" id="questions">
       <h2 class="text-4xl font-serif mb-9 text-center">Preguntas Frecuentes</h2>
       <div class="flex flex-col items-center">
 
@@ -93,7 +93,7 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-7">
       <section class="col-span-4 m-auto w-10/12 md:w-3/6 my-16" id="contactUs">
-        <h2 class="text-4xl font-serif mb-9 text-center"> Contacto </h2>
+        <h2 class="text-4xl font-serif mb-3 text-center"> Contacto </h2>
         <form action="" onsubmit="return false;">
           <div class="flex flex-col mb-4 gap-3">
             <label for="lname" class="font-roboto">Nombre:</label>
@@ -112,13 +112,14 @@
           </div>
 
           <button type="submit"
-            class="font-sans text-2xl text-white bg-slate-800 hover:bg-slate-700 w-full p-3 mt-6 rounded-2xl">
+            class="font-sans w-full mt-10 px-6 py-2 bg-slate-600 text-white rounded-lg shadow-md hover:bg-slate-700 active:scale-95 transition duration-75">
             Enviar</button>
         </form>
       </section>
-      <section class="bg-purple-900 text-white col-span-3 pl-16 pb-16 rounded-t-3xl lg:rounded-lt-3xl" id="info">
+      <section class="bg-purple-900 text-white col-span-3 pl-16 pb-16 rounded-t-3xl lg:rounded-lt-3xl  md:px-20 px-10"
+        id="info">
         <h2 class="text-4xl font-serif mb-9 mt-16"> Info </h2>
-        <div class="flex flex-col md:flex-row lg:flex-col flex-wrap gap-9 justify-evenly ml-7">
+        <div class="flex flex-col md:flex-row lg:flex-col flex-wrap gap-9 justify-between ml-7">
           <div class="inline-flex items-center gap-3 min-w-36">
             <iconify-icon icon="ic:baseline-email" width="48" height="48" class="text-white"></iconify-icon>
             <p class="font-roboto">example@gmail.com</p>
@@ -142,8 +143,8 @@
     </div>
   </main>
 
-  <footer class="bg-stone-800 text-white text-end">
-    <p class="p-3 mr-10 font-bold text-xl"> Desarrollado por Yahir D.</p>
+  <footer class="bg-stone-800 text-white text-end lg:px-40 md:px-20 px-10 px-10 py-10">
+    <p class="font-bold text-xl"> Desarrollado por Yahir D.</p>
   </footer>
 
   <script src="./src/js/main.js" type="module"></script>

@@ -2,19 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-.visible{
-   opacity: 1;
+.visible {
+  opacity: 1;
 }
 
-.fade{
-   opacity: 0;
+.fade {
+  opacity: 0;
 }
 
 .rotate {
-   transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 .show_accordion {
-   padding: 0 20px 20px 20px;
-   opacity: 1;
+  padding: 0 20px 20px 20px;
+  opacity: 1;
+}
+
+.base_button {
+  @apply font-sans px-6 py-2 text-white rounded-lg shadow-md
+}
+
+.animation_button {
+  @apply active:scale-95 transition duration-200
+}
+
+.padding_page {
+  @apply xl:px-60 lg:px-40 md:px-20 px-10
 }

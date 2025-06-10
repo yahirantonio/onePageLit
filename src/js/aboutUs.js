@@ -70,12 +70,12 @@ export class InfoContainer extends LitElement {
   aboutUs() {
     return html`
     <section
-      class="my-36 lg:px-40 md:px-20 px-10 pt-6 flex flex-wrap-reverse justify-center items-center gap-16 
+      class="my-36 padding_page pt-6 flex flex-wrap-reverse justify-center items-center gap-16 
       transition-all duration-1000 opacity-1 ${this._fade()}" id="AboutUs">
       <img src="/img/team.png" class="max-w-xs md:max-w-sm bg-gray-300 p-5 rounded-2xl" alt="">
       <div class="md:max-w-lg">
-        <div class="flex justify-between mb-6 items-center">
-          <h2 class="font-serif text-4xl md:text-5xl sm:grow text-center sm:text-left">Acerca de nosotros</h2>
+        <div class="flex justify-center mb-6 gap-6 items-center flex-wrap">
+          <h2 class="font-serif text-4xl md:text-5xl grow text-center sm:text-left">Acerca de nosotros</h2>
           <iconify-icon icon="maki:arrow" width="42px" height="42px" class="cursor-pointer transition-all duration-1000 ${this._rotate()}" @click="${this._show}"></iconify-icon>
         </div>
         <p class="text-lg text-center sm:text-left font-roboto">En Facturas Facilitas, simplificamos la forma en que gestionas tus facturas. Somos una plataforma en línea dedicada a brindar soluciones rápidas, seguras y accesibles para la creación, envío y administración de facturas electrónicas.</p>
@@ -90,7 +90,7 @@ export class InfoContainer extends LitElement {
   mission() {
     return html`
     <section 
-    class="my-36 lg:px-40 md:px-20 px-10 pt-6 flex flex-wrap-reverse gap-16 justify-center
+    class="my-36 padding_page pt-6 flex flex-wrap-reverse gap-16 justify-center
     opacity-0 transition-all duration-1000 ${this._appear()}"
     id="Mission">
       <img src="/img/target.png" class="max-w-xs md:max-w-sm" alt="">

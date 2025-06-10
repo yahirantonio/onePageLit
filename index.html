@@ -17,7 +17,7 @@
   <header class="bg-cover bg-center bg-no-repeat w-full h-screen"
     style="background-image: url('/public/img/invoice_book.jpg')">
 
-    <nav class="text-white fixed top-0 py-3 w-full lg:px-40 md:px-20 px-10 transition duration-200" id="navbar">
+    <nav class="text-white fixed top-0 py-3 w-full padding_page transition duration-200" id="navbar">
       <ul class="flex flex-row flex-wrap justify-center sm:justify-between font-roboto items-center">
         <div class="flex gap-9">
           <li><a href="#benefits" class="hover:underline font-bold text-xl">Beneficios</a></li>
@@ -25,13 +25,13 @@
           <li><a href="#contactUs" class="hover:underline font-bold text-xl">Contacto</a></li>
         </div>
         <button
-          class="px-6 py-2 bg-red-600 text-white rounded-lg shadow-md hover:bg-red-700 active:scale-95 transition duration-200 hidden sm:block">
+          class="bg-red-600 hover:bg-red-700 base_button animation_button hidden sm:block">
           PROBAR
           AHORA</button>
       </ul>
     </nav>
 
-    <div class="bg-[#0000002E] lg:px-40 md:px-20 px-10 h-screen w-full">
+    <div class="bg-[#0000002E] padding_page h-screen w-full">
       <div class="text-center lg:text-left text-white">
         <h1 class="text-5xl sm:text-6xl md:text-7xl font-serif font-bold mb-6 pt-48">Facilitamos la
           Gestión <br> de tu Facturación</h1>
@@ -48,7 +48,7 @@
     </div>
 
     <div class="bg-gradient-to-t from-emerald-500 to-white h-10 mt-36"></div>
-    <section class="lg:px-40 md:px-20 px-10 pb-20 bg-gradient-to-t from-green-900 to-emerald-500 text-white"
+    <section class="padding_page pb-20 bg-gradient-to-t from-green-900 to-emerald-500 text-white"
       id="benefits">
       <h2 class="text-4xl md:text-5xl text-center pt-10 pb-20 font-serif">Beneficios</h2>
       <div class="flex justify-center md:justify-around lg:justify-between flex-wrap gap-16">
@@ -64,7 +64,7 @@
 
     </section>
 
-    <section class="my-36 lg:px-40 md:px-20 px-10 pt-6 flex flex-wrap-reverse gap-16 justify-center" id="details">
+    <section class="my-36 padding_page pt-6 flex flex-wrap-reverse gap-16 justify-center" id="details">
       <img src="/public/img/analytics.png" class="max-w-xs md:max-w-sm" alt="Imagen ilustrativa de una grafica">
       <div class=" md:max-w-lg text-center lg:text-left">
         <h2 class="text-4xl font-serif mb-9">Emite tu factura online y xml para tu empresa en nuestra plataforma</h2>
@@ -77,7 +77,7 @@
       </div>
     </section>
 
-    <section class="lg:px-40 md:px-20 my-36 md:w-4/6 mx-auto" id="questions">
+    <section class="padding_page my-36 md:w-4/6 mx-auto" id="questions">
       <h2 class="text-4xl font-serif mb-9 text-center">Preguntas Frecuentes</h2>
       <div class="flex flex-col items-center">
 
@@ -112,7 +112,7 @@
           </div>
 
           <button type="submit"
-            class="font-sans w-full mt-10 px-6 py-2 bg-slate-600 text-white rounded-lg shadow-md hover:bg-slate-700 active:scale-95 transition duration-75">
+            class="w-full mt-10 bg-slate-600 hover:bg-slate-700 base_button animation_button">
             Enviar</button>
         </form>
       </section>
@@ -143,8 +143,8 @@
     </div>
   </main>
 
-  <footer class="bg-stone-800 text-white text-end lg:px-40 md:px-20 px-10 px-10 py-10">
-    <p class="font-bold text-xl"> Desarrollado por Yahir D.</p>
+  <footer class="bg-stone-800 text-white padding_page py-4">
+    <p class="font-bold text-xl text-center sm:text-end"> Desarrollado por Yahir D.</p>
   </footer>
 
   <script src="./src/js/main.js" type="module"></script>

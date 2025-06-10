@@ -12,10 +12,10 @@ window.addEventListener("scroll", () => {
   const triggerTop = trigger.getBoundingClientRect().top;
 
   if (triggerTop <= 100) {
-    navbar.classList.add("bg-emerald-700", "shadow");
+    navbar.classList.add("bg-emerald-700", "shadow-xl");
     navbar.classList.remove("bg-transparent");
   } else {
     navbar.classList.add("bg-transparent");
-    navbar.classList.remove("bg-emerald-700", "shadow");
+    navbar.classList.remove("bg-emerald-700", "shadow-xl");
   }
 });

@@ -1,6 +1,9 @@
-import { LitElement, css, html } from 'lit'
+import { LitElement, html } from 'lit'
 
 export class BenefitCard extends LitElement {
+   
+   createRenderRoot() { return this; }
+
    static get properties() {
       return {
          imageUrl: { type: String },
@@ -26,9 +29,6 @@ export class BenefitCard extends LitElement {
       `
    }
 
-   createRenderRoot() {
-      return this;
-   }
 }
 
 window.customElements.define('benefit-card', BenefitCard)

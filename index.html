@@ -14,18 +14,18 @@
 </head>
 
 <body>
+
   <header class="bg-cover bg-center bg-no-repeat w-full h-screen"
     style="background-image: url('/public/img/invoice_book.jpg')">
 
     <nav class="text-white fixed top-0 py-3 w-full padding_page transition duration-200" id="navbar">
       <ul class="flex flex-row flex-wrap justify-center sm:justify-between font-roboto items-center">
         <div class="flex gap-9">
-          <li><a href="#benefits" class="hover:underline font-bold text-xl">Beneficios</a></li>
-          <li><a href="#details" class="hover:underline font-bold text-xl">Informacion</a></li>
-          <li><a href="#contactUs" class="hover:underline font-bold text-xl">Contacto</a></li>
+          <li><a href="#benefits" class="hover:underline font-bold text-lg">Beneficios</a></li>
+          <li><a href="#details" class="hover:underline font-bold text-lg">Informacion</a></li>
+          <li><a href="#contactUs" class="hover:underline font-bold text-lg">Contacto</a></li>
         </div>
-        <button
-          class="bg-red-600 hover:bg-red-700 base_button animation_button hidden sm:block">
+        <button class="bg-red-600 hover:bg-red-700 base_button animation_button hidden sm:block">
           PROBAR
           AHORA</button>
       </ul>
@@ -43,15 +43,17 @@
   </header>
 
   <main id="trigger">
+
     <div class="min-h-96">
       <info-container></info-container>
     </div>
 
     <div class="bg-gradient-to-t from-emerald-500 to-white h-10 mt-36"></div>
-    <section class="padding_page pb-20 bg-gradient-to-t from-green-900 to-emerald-500 text-white"
-      id="benefits">
+
+    <section class="padding_page pb-20 bg-gradient-to-t from-green-900 to-emerald-500 text-white" id="benefits">
+
       <h2 class="text-4xl md:text-5xl text-center pt-10 pb-20 font-serif">Beneficios</h2>
-      <div class="flex justify-center md:justify-around lg:justify-between flex-wrap gap-16">
+      <div class="flex justify-center md:justify-around lg:justify-evenly flex-wrap gap-16 md:gap-0">
         <benefit-card imageUrl="/img/folder.png" title="Guardado"
           text="Mantén tus documentos siempre seguros y organizados en nuestra plataforma, con acceso en cualquier momento y desde cualquier lugar."></benefit-card>
         <benefit-card imageUrl="/img/Fast.webp" title="Velocidad"
@@ -64,20 +66,33 @@
 
     </section>
 
-    <section class="my-36 padding_page pt-6 flex flex-wrap-reverse gap-16 justify-center" id="details">
-      <img src="/public/img/analytics.png" class="max-w-xs md:max-w-sm" alt="Imagen ilustrativa de una grafica">
-      <div class=" md:max-w-lg text-center lg:text-left">
+    <!-- <div class="absolute z-99  w-full max-w-screen px-60 flex gap-6 h-full">
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+      <div class="w-full h-screen bg-green-200/50"></div>
+    </div> -->
+
+    <section class="my-36 padding_page pt-6 flex flex-wrap-reverse gap-12 sm:gap-8 justify-center items-center" id="details">
+      <img src="/public/img/analytics.png" class="max-w-xs md:max-w-xl" alt="Imagen ilustrativa de una grafica">
+      <div class=" w-full xl:max-w-xl text-center lg:text-left">
         <h2 class="text-4xl font-serif mb-9">Emite tu factura online y xml para tu empresa en nuestra plataforma</h2>
         <p class="font-roboto text-lg">
           Con nuestra plataforma, puedes emitir facturas y archivos XML en línea de forma rápida, segura y cumpliendo
           con todas las normativas legales. Diseñada para pequeñas y grandes empresas, te ayuda a optimizar tus
           procesos administrativos y ahorrar tiempo, brindándote el control total de tus operaciones desde cualquier
-          lugar.
-        </p>
-      </div>
+          lugar.class="max-w-xs md:max-w-xl bg-red-600"
     </section>
 
-    <section class="padding_page my-36 md:w-4/6 mx-auto" id="questions">
+    <section class="padding_page my-36 md:w-5/6 mx-auto" id="questions">
       <h2 class="text-4xl font-serif mb-9 text-center">Preguntas Frecuentes</h2>
       <div class="flex flex-col items-center">
 
@@ -111,8 +126,7 @@
               placeholder="Escribe aqui..."></textarea>
           </div>
 
-          <button type="submit"
-            class="w-full mt-10 bg-slate-600 hover:bg-slate-700 base_button animation_button">
+          <button type="submit" class="w-full mt-10 bg-slate-600 hover:bg-slate-700 base_button animation_button">
             Enviar</button>
         </form>
       </section>

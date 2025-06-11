@@ -47,7 +47,7 @@ export class Accordion extends LitElement {
    render() {
       return html
          `
-         <div class="shadow-xl rounded-2xl max-w-4xl mb-9" id="accordion">
+         <div class="shadow-xl rounded-2xl mb-9" id="accordion">
           <div class="flex flex-row flex-nowrap justify-between items-center cursor-pointer" @click="${this._animation}">
             <p class="font-roboto m-5">${this.question}</p>
             <iconify-icon icon="oui:arrow-down" width="27px" height="27px" class="transition-all duration-1000 m-3 ${this._rotate()}"></iconify-icon>
